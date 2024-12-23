@@ -14,6 +14,7 @@
 #  limitations under the License.
 
 import hydra
+import torch_npu
 import torch
 from gluonts.time_feature import get_seasonality
 from hydra.core.hydra_config import HydraConfig
@@ -56,7 +57,7 @@ def main(cfg: DictConfig):
                 writer.add_scalar(f"{metadata.split}_metrics/{name}", metric)
             writer.close()
             break
-        except torch.cuda.OutOfMemoryError:
+        except torch.npu.OutOfMemoryError:
             print(
                 f"OutOfMemoryError at batch_size {batch_size}, reducing to {batch_size//2}"
             )

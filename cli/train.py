@@ -18,6 +18,7 @@ from typing import Callable, Optional
 
 import hydra
 import lightning as L
+import torch_npu
 import torch
 from hydra.utils import instantiate
 from omegaconf import DictConfig
