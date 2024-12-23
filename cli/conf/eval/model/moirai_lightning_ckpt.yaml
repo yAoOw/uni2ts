@@ -1,5 +1,5 @@
 _target_: uni2ts.model.moirai.MoiraiForecast.load_from_checkpoint
-checkpoint_path: ...
+checkpoint_path: /app/jg/uni2ts/moirai-1.1-R-small
 num_samples: 100
 patch_size: ???
 context_length: ???

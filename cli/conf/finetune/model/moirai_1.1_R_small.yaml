@@ -2,7 +2,7 @@
 _target_: uni2ts.model.moirai.MoiraiFinetune
 module:
   _target_: uni2ts.model.moirai.MoiraiModule.from_pretrained
-  pretrained_model_name_or_path: Salesforce/moirai-1.1-R-small
+  pretrained_model_name_or_path: /app/jg/uni2ts/moirai-1.1-R-small
 module_kwargs:
   _target_: builtins.dict
   distr_output:
